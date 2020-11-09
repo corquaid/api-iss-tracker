@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:regular);
+
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
+
+@font-face {
+  font-family: 'saxmono';
+  src: url(Fonts/saxmono-webfont.woff);
+  font-style: normal;
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url(Fonts/HelveticaNeueCyr-Bold.woff);
+  font-style: normal;
+  font-weight: bolder;
+}
+
+body {
+  /* background: url('/API\ Mini-Project/International-Space-Station-Horizon.jpg') no-repeat center center fixed; */
+  background-color: #2f2f2f;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-family: 'helvetica', sans-serif;
+  font-size: 45px;
+  /* text-shadow: 1px 1px 2px white; */
+  color: #fff;
+}
+
+h4 {
+  font-family: 'space grotesk', Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+p {
+  font-family: 'space grotesk', arial, sans-serif;
+}
+
+p img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  font-family: 'space grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  /* line-height: 35px; */
+  width: 90px;
+  height: 35px;
+  border: 2px solid grey;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+i {
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 30px;
+  padding: 0px;
+  color: white;
+  text-decoration: none;
+  font-family: 'space grotesk';
+  font-size: 18px;
+}
+
+footer a:hover {
+  color: orange;
+}
+
+footer a, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+#map-container {
+  height: 600px;
+  width: 70vw;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+#exp-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 130px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.head-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.header img {
+  width: 100px;
+  height: 80px;
+}
+
+.main-container {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lat-long-data, .astro-data {
+  font-family: Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  width: 170px;
+  height: 200px;
+  background-color: #ffba81;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.8);
+  padding: 5px;
+  margin: 10px;
+}
+
+.astro-data {
+  width: 170px;
+  height: 330px;
+}
+
+.lat-long-data span, .astro-data span {
+  font-weight: 900;
+}
+
+.astro-data span {
+  vertical-align: middle;
+}
+
+#visibility {
+  text-transform: capitalize;
+}
+
+#expedition {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+#exp-img {
+  width: 160px;
+  height: 100%;
+  text-align: center;
+}
+
+#flag0 #flag1 #flag2 {
+  display: inline-flex;
+  align-items: center;
+}
+
+#exp {
+  margin-left: 4px;
+}
+
+

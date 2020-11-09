@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet JavaScript Maps CSS stylesheet link -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Leaflet JavaScript Maps script link: -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <!-- Leaflet.Terminator script -->
+  <script src=" https://unpkg.com/@joergdietrich/leaflet.terminator@1.0.0/L.Terminator.js"></script>
+  <!-- Fullscreen Control script and CSS file from Mapbox -->
+  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+  <link rel="shortcut icon" href="8eSwzoj-astronaut-s-helmet-clipart.jpg" type="image/x-icon">
+  <title>Simple ISS Tracker</title>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>International Space Station Tracker</h1>
+    </div>
+    <div class="head-img-container">
+      <img src="/API Mini-Project/International_Space_Station_white.svg.png" alt="" srcset="">
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="panel-container">
+      <div class="lat-long-data">
+        <h4>Orbital Data</h4>
+        <p>Latitude: <span id="lat-data"></span></p>
+        <p>Longitude: <span id="long-data"></span></p>
+        <p>Velocity: <span id="velocity"></span><strong> km/s</strong></p>
+        <p>Altitude: <span id="altitude"></span><strong> km</strong></p>
+        <p>ISS Visibility: <strong><span id="visibility"></span></strong></p>
+      </div>
+      <div>
+        <button onclick="centreMap()">ISS <i class="fas fa-crosshairs"></i></button>
+      </div>
+      <div class="astro-data">
+        <h4>Current Crew</h4>
+        <p><span id="crew0"></span> <span id="flag0"><img id="img0" src=""/></span></p>
+        <p><span id="crew1"></span> <span id="flag1"><img id="img1" src=""/></span></p>
+        <p><span id="crew2"></span> <span id="flag2"><img id="img2" src=""/></span></p>
+        <p id="expedition">Expedition<span id="exp"></span></p>
+        <div id="exp-img-container">
+          <img id="exp-img" src="/API Mini-Project/1024px-ISS_Expedition_64_Patch.png"
+                alt="ISS Expedition 64 mission patch"
+                title="ISS Expedition 64 mission insignia">
+        </div>
+      </div>
+    </div>
+    <div id="map-container"></div>
+  </div>
+  <footer>
+    <a id="profile-link" href="https://github.com/corquaid" target="_blank"><i class="fab fa-github"></i>  corquaid</a>
+  </footer>   
+</body>
+<!-- Custom JS script -->
+<script src="script.js"></script>
+</html>
