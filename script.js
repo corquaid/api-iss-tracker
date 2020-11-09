@@ -85,7 +85,7 @@ const  getIssLocation = async() => {
   // console.log(latitude);
   // console.log(longitude);
   // console.log(solar_lat);
-  console.log(solar_lon);
+  // console.log(solar_lon);
   // console.log(visibility);
   // console.log(footprint);
 
