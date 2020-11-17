@@ -17,7 +17,6 @@
 }
 
 body {
-  /* background: url('/API\ Mini-Project/International-Space-Station-Horizon.jpg') no-repeat center center fixed; */
   background-color: #2f2f2f;
   width: 100vw;
   height: 100vh;
@@ -25,7 +24,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 h1 {
@@ -59,16 +58,23 @@ button {
   font-size: 15px;
   font-weight: 700;
   /* line-height: 35px; */
-  width: 90px;
+  width: 100px;
   height: 35px;
   border: 2px solid grey;
   box-sizing: border-box;
   vertical-align: middle;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
 }
 
 button:active {
   background-color: black;
   color: white;
+  transform: translateY(3px)
 }
 
 button:focus {
@@ -102,11 +108,11 @@ footer a, a:visited, a:active {
 }
 
 #map-container {
-  height: 600px;
+  height: 75vh;
   width: 70vw;
   border: 2px solid black;
   margin-top: 10px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 #exp-img-container {
@@ -120,7 +126,7 @@ footer a, a:visited, a:active {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  /* margin-top: 20px; */
 }
 
 .head-img-container {
@@ -136,10 +142,11 @@ footer a, a:visited, a:active {
 }
 
 .main-container {
-  width: 80vw;
+  width: 95vw;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin: 10px;
 }
 
 .panel-container {
@@ -149,7 +156,7 @@ footer a, a:visited, a:active {
   align-items: center;
 }
 
-.lat-long-data, .astro-data {
+.orbital-data, .astro-data, .spacecraft-data {
   font-family: Geneva, Tahoma, sans-serif;
   font-size: 13px;
   width: 170px;
@@ -162,17 +169,50 @@ footer a, a:visited, a:active {
   margin: 10px;
 }
 
-.astro-data {
+.orbital-data {
   width: 170px;
-  height: 330px;
+  height: 220px;
 }
 
-.lat-long-data span, .astro-data span {
+.astro-data {
+  width: 170px;
+  height: 500px;
+}
+
+.orbital-data span, .astro-data span, .spacecraft-data span {
   font-weight: 900;
 }
 
-.astro-data span {
+.astro-data span, .spacecraft-data span {
   vertical-align: middle;
+}
+
+.astro-data a {
+  text-decoration: none;
+}
+
+.astro-data a:hover {
+  color: green;
+}
+
+.spacecraft-data a {
+  text-decoration: none;
+}
+
+.spacecraft-data a:hover {
+  color: green;
+}
+
+#iss-horizon span {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#iss-horizon-img {
+  height: 25px;
+  width: 25px;
+  opacity: 0.7;
+  margin-left: 20px;
 }
 
 #visibility {
@@ -202,6 +242,10 @@ footer a, a:visited, a:active {
 
 #exp {
   margin-left: 4px;
+}
+
+#commander {
+  font-weight: normal;
 }
 
 
