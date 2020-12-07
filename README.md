@@ -1,6 +1,6 @@
 # Track the International Space Station live!
 
-![Tracker screenshot](https://github.com/corquaid/api-iss-tracker/blob/main/api-iss-tracker-screenshot.png)
+![Tracker screenshot](https://github.com/corquaid/api-iss-tracker/blob/main/Images/App-screenshot-171120.png)
 
 This is a one-page Javascript app showing the live position, orbital parameters and crew information for the ISS.
 
