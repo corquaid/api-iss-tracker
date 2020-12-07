@@ -158,7 +158,7 @@ const issInfo = () => {
       name: 'Sergey Ryzhikov',
       country: 'Russia',
       wiki: 'https://en.wikipedia.org/wiki/Sergey_Ryzhikov_(cosmonaut)',
-      flag: 'https://www.countryflags.io/ru/shiny/64.png',
+      flag: 'https://flagcdn.com/w20/ru.png',
       position: 'Commander',
       launch: 1602633600
     },
@@ -166,7 +166,7 @@ const issInfo = () => {
       name: 'Sergey Kud-Sverchkov',
       country: 'Russia',
       wiki: 'https://en.wikipedia.org/wiki/Sergey_Kud-Sverchkov',
-      flag: 'https://www.countryflags.io/ru/shiny/64.png',
+      flag: 'https://flagcdn.com/w20/ru.png',
       position: 'Flight Engineer',
       launch: 1602633600
     },
@@ -174,7 +174,7 @@ const issInfo = () => {
       name: 'Kate Rubins',
       country: 'United States',
       wiki: 'https://en.wikipedia.org/wiki/Kathleen_Rubins',
-      flag: 'https://www.countryflags.io/us/shiny/64.png',
+      flag: 'https://flagcdn.com/w20/us.png',
       position: 'Flight Engineer',
       launch: 1602633600
     },
@@ -182,7 +182,7 @@ const issInfo = () => {
       name: 'Mike Hopkins',
       country: 'United States',
       wiki: 'https://en.wikipedia.org/wiki/Michael_S._Hopkins',
-      flag: 'https://www.countryflags.io/us/shiny/64.png',
+      flag: 'https://flagcdn.com/w20/us.png',
       position: 'Flight Engineer',
       launch: 1602633600
     },
@@ -190,7 +190,7 @@ const issInfo = () => {
       name: 'Victor Glover',
       country: 'United States',
       wiki: 'https://en.wikipedia.org/wiki/Victor_J._Glover',
-      flag: 'https://www.countryflags.io/us/shiny/64.png',
+      flag: 'https://flagcdn.com/w20/us.png',
       position: 'Flight Engineer',
       launch: 1602633600
     },
@@ -198,7 +198,7 @@ const issInfo = () => {
       name: 'Shannon Walker',
       country: 'United States',
       wiki: 'https://en.wikipedia.org/wiki/Shannon_Walker',
-      flag: 'https://www.countryflags.io/us/shiny/64.png',
+      flag: 'https://flagcdn.com/w20/us.png',
       position: 'Flight Engineer',
       launch: 1602633600
     },
@@ -206,7 +206,7 @@ const issInfo = () => {
       name: 'Soichi Noguchi',
       country: 'Japan',
       wiki: 'https://en.wikipedia.org/wiki/Soichi_Noguchi',
-      flag: 'https://www.countryflags.io/jp/shiny/64.png',
+      flag: 'https://flagcdn.com/w20/jp.png',
       position: 'Flight Engineer',
       launch: 1602633600
     },
@@ -217,31 +217,37 @@ const issInfo = () => {
       spacecraft: 'Progress MS-14',
       wiki: 'https://en.wikipedia.org/wiki/Progress_MS-14',
       dockDate: 'April 25th 2020',
-      flag: 'https://www.countryflags.io/ru/shiny/64.png'
+      flag: 'https://flagcdn.com/w20/ru.png'
     },
     {
       spacecraft: 'Progress MS-15',
       wiki: 'https://en.wikipedia.org/wiki/Progress_MS-15',
       dockDate: 'July 23rd 2020',
-      flag: 'https://www.countryflags.io/ru/shiny/64.png'
+      flag: 'https://flagcdn.com/w20/ru.png'
     },
     {
       spacecraft: 'Cygnus NG-14',
       wiki: 'https://en.wikipedia.org/wiki/Cygnus_NG-14',
       dockDate: 'Oct 5th 2020',
-      flag: 'https://www.countryflags.io/us/shiny/64.png'
+      flag: 'https://flagcdn.com/w20/us.png'
     },
     {
       spacecraft: 'Soyuz MS-17',
       wiki: 'https://en.wikipedia.org/wiki/Soyuz_MS-17',
       dockDate: 'Oct 14th 2020',
-      flag: 'https://www.countryflags.io/ru/shiny/64.png'
+      flag: 'https://flagcdn.com/w20/ru.png'
     },
     {
       spacecraft: 'Crew-1 Dragon',
       wiki: 'https://en.wikipedia.org/wiki/SpaceX_Crew-1',
       dockDate: 'Nov 17th 2020',
-      flag: 'https://www.countryflags.io/us/shiny/64.png'
+      flag: 'https://flagcdn.com/w20/us.png'
+    },
+    {
+      spacecraft: 'CRS-21 Dragon',
+      wiki: 'https://en.wikipedia.org/wiki/SpaceX_CRS-21',
+      dockDate: 'Dec 7th 2020',
+      flag: 'https://flagcdn.com/w20/us.png'
     }
   ];
 
@@ -273,16 +279,19 @@ const issInfo = () => {
   document.getElementById("craftname2").innerText = dockedSpacecraft[2].spacecraft;
   document.getElementById("craftname3").innerText = dockedSpacecraft[3].spacecraft;
   document.getElementById("craftname4").innerText = dockedSpacecraft[4].spacecraft;
+  document.getElementById("craftname5").innerText = dockedSpacecraft[5].spacecraft;
   document.getElementById("craftimg0").src = dockedSpacecraft[0].flag;
   document.getElementById("craftimg1").src = dockedSpacecraft[1].flag;
   document.getElementById("craftimg2").src = dockedSpacecraft[2].flag;
   document.getElementById("craftimg3").src = dockedSpacecraft[3].flag;
   document.getElementById("craftimg4").src = dockedSpacecraft[4].flag;
+  document.getElementById("craftimg5").src = dockedSpacecraft[5].flag;
   document.getElementById("craftwiki0").href = dockedSpacecraft[0].wiki;
   document.getElementById("craftwiki1").href = dockedSpacecraft[1].wiki;
   document.getElementById("craftwiki2").href = dockedSpacecraft[2].wiki;
   document.getElementById("craftwiki3").href = dockedSpacecraft[3].wiki;
   document.getElementById("craftwiki4").href = dockedSpacecraft[4].wiki;
+  document.getElementById("craftwiki5").href = dockedSpacecraft[5].wiki;
 }
 
 issInfo();

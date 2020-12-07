@@ -48,9 +48,9 @@ p {
 
 p img {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 20px;
-  height: 20px;
+  height: 13px;
 }
 
 button {
@@ -177,6 +177,10 @@ footer a, a:visited, a:active {
 .astro-data {
   width: 170px;
   height: 500px;
+}
+
+.spacecraft-data {
+  height: 230px;
 }
 
 .orbital-data span, .astro-data span, .spacecraft-data span {
